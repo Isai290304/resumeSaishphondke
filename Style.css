@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    border: 10px solid black;
+    box-sizing: border-box;
+    background-color: hwb(151 75% 4% / 0.307); /* light gray background color */
+}
+
+.section {
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-top: 1px solid black;
+}
+
+.section:first-child {
+    border-top: none;
+}
+
+.section-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-icon {
+    background-color: #94bdcf;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+}
+
+.left-side {
+    flex: 0 0 auto;
+}
+
+.right-side {
+    flex: 1 1 auto;
+}
+
+.photo-container {
+    position: relative;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.contact-details {
+    margin-left: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.symbolic-image {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.symbolic-image img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.symbolic-image span {
+    font-weight: bold;
+}
+
+.contact-info .symbolic-image:last-child {
+    margin-bottom: 0;
+}
+
+/* Added CSS for the qualification table */
+table {
+    width: calc(100% - 40px); /* Subtracting the left and right padding of the section */
+    margin: 10px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
